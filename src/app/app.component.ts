@@ -7,7 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  monsterPower:number;
 
   monsterName:string = 'Mobzilla';
 
+  randGen(){
+   this.monsterPower = Math.floor(Math.random() * 1000);
+  }
 }
